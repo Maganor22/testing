@@ -17,7 +17,7 @@ describe('Test formulaire d\'ajout', () => {
         });
       });
   })
-  /*test*/
+  
   /* it('passes', () => {
     cy.visit('http://localhost/github_testing/addUser')
     cy.get('input[name="nom"]').type('DOE')
