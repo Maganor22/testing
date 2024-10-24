@@ -2,7 +2,7 @@ describe('Test formulaire d\'ajout', () => {
   let email = Math.random().toString(36).substring(2, 15) + '@gmail.com'
   let date = new Date().toISOString().slice(0, 10);
   it('passes', () => {
-    cy.visit('https://testing.adrardev.fr/addUser')
+    cy.visit('https://testing.adrardev.fr/addUser') 
     cy.get('input[name="nom"]').type('DOE')
     cy.get('input[name="prenom"]').type('John')
     cy.get('input[name="mail"]').type(email)
