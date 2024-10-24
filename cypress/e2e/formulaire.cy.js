@@ -10,7 +10,7 @@ describe('Test formulaire d\'ajout', () => {
     cy.get('input[type="submit"]').click()
     cy.get('#msgzone').should('contain', "Le compte a été ajouté en BDD")
       .then(() => {
-        cy.request('POST', 'http://testing.adrardev.fr/api/addTest', {
+        cy.request('POST', 'https://testing.adrardev.fr/api/addTest', {
           name: 'Test formulaire d\'ajout',
           valid: 1,
           date: date
